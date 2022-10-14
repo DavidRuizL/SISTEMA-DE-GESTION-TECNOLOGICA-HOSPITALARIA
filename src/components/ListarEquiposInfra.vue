@@ -2,7 +2,7 @@
   <div claa="container">
     <div class="card">
       <div class="card-header">
-        <h2>Listado de Equipos22</h2>
+        <h2>Listado de Infraestructura</h2>
       </div>
       <div class="card-body">
         <table class="table">
@@ -17,23 +17,24 @@
           </thead>
           <tbody>
             <tr v-for="equipo in equipos" :key="equipo.id">
-              <!-- <td scope="row"></td> -->
-              <td>{{ equipo.id }}</td>
-              <td>{{ equipo.nombre }}</td>
-              <td>{{ equipo.marca }}</td>
-              <td>{{ equipo.modelo }}</td>
-              <td>
-                <div class="btn-group" role="group" aria-label="">
-                  <button type="button" class="btn btn-info">Editar</button>
-                  <button
-                    type="button"
-                    v-on:click="borrarEquipo(equipo.id)"
-                    class="btn btn-danger"
-                  >
-                    Borrar
-                  </button>
-                </div>
-              </td>
+              <template v-if="equipo.area == 1">
+                <td>{{ equipo.id }}</td>
+                <td>{{ equipo.nombre }}</td>
+                <td>{{ equipo.marca }}</td>
+                <td>{{ equipo.modelo }}</td>
+                <td>
+                  <div class="btn-group" role="group" aria-label="">
+                    <button type="button" class="btn btn-info">Editar</button>
+                    <button
+                      type="button"
+                      v-on:click="borrarEquipo(equipo.id)"
+                      class="btn btn-danger"
+                    >
+                      Borrar
+                    </button>
+                  </div>
+                </td>
+              </template>
             </tr>
           </tbody>
         </table>
@@ -44,6 +45,7 @@
 
 <script>
 export default {
+  name: "ListarEquiposInfra",
   data() {
     return {
       equipos: [],
@@ -72,7 +74,7 @@ export default {
         .then((datosRespuesta) => {
           console.log(datosRespuesta);
         });
-      window.location.href = "listarequipos";
+      window.location.href = "listarequiposinfra";
     },
   },
 };

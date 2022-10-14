@@ -1,12 +1,18 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-    <router-link to="/listarequipos">Listar Equipo</router-link>
-    <router-link to="/listarresponsables">Listar Responsable</router-link>
-  </nav>
+  <NavComp />
   <router-view />
 </template>
+
+<script>
+import NavComp from "@/components/NavComp.vue";
+
+export default {
+  name: "App",
+  components: {
+    NavComp,
+  },
+};
+</script>
 
 <style>
 #app {

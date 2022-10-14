@@ -42,6 +42,7 @@
 
 <script>
 export default {
+  name: "ListarResponsables",
   data() {
     return {
       responsables: [],
