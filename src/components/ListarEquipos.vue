@@ -54,7 +54,7 @@ export default {
   },
   methods: {
     lilstarEquipos() {
-      fetch("http://localhost/Practica_vue/")
+      fetch("http://localhost/practica2/")
         .then((respuesta) => respuesta.json())
         .then((datosRespuesta) => {
           console.log(datosRespuesta);
@@ -67,7 +67,7 @@ export default {
     },
     borrarEquipo(id) {
       console.log(id);
-      fetch("http://localhost/Practica_vue/?borrar=" + id)
+      fetch("http://localhost/practica2/?borrar=" + id)
         .then((respuesta) => respuesta.json())
         .then((datosRespuesta) => {
           console.log(datosRespuesta);

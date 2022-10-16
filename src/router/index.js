@@ -3,6 +3,8 @@ import HomeView from "../views/HomeView.vue";
 
 import ListarEquipos from "../components/ListarEquipos.vue";
 import ListarResponsables from "../components/ListarResponsables.vue";
+import CrearEquipo from "../components/CrearEquipo.vue";
+import CrearResponsable from "../components/CrearResponsable.vue";
 
 const routes = [
   {
@@ -19,6 +21,16 @@ const routes = [
     path: "/listarresponsables",
     name: "ListarResponsables",
     component: ListarResponsables,
+  },
+  {
+    path: "/crearequipo",
+    name: "CrearEquipo",
+    component: CrearEquipo,
+  },
+  {
+    path: "/crearesponsable",
+    name: "CrearResponsable",
+    component: CrearResponsable,
   },
   {
     path: "/about",
