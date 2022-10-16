@@ -4,9 +4,12 @@
       <div class="card-header">
         <h2>Listado de Equipos Biomedicos</h2>
       </div>
-      <div class="card-body">
-        <table class="table">
-          <thead>
+      <div class="card-body row tbl-fixed" style="overflow: auto">
+        <table
+          border="1"
+          class="table table-hover table-ligth table-bordered table-stripe"
+        >
+          <thead class="table-secondary">
             <tr>
               <th>ID</th>
               <th>Nombre</th>
@@ -21,7 +24,7 @@
                 <td>{{ equipo.id }}</td>
                 <td>{{ equipo.nombre }}</td>
                 <td>{{ equipo.marca }}</td>
-                <td>{{ equipo.area }}</td>
+                <td>{{ equipo.modelo }}</td>
                 <td>
                   <div class="btn-group" role="group" aria-label="">
                     <button type="button" class="btn btn-info">Editar</button>

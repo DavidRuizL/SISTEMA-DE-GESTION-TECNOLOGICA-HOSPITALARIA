@@ -1,6 +1,13 @@
 <template>
   <NavComp />
   <router-view />
+  <!-- /container -->
+  <footer class="footer">
+    <br />
+    <br />
+    <br />
+    <p>&copy; Ingenieria de software - 2022</p>
+  </footer>
 </template>
 
 <script>
