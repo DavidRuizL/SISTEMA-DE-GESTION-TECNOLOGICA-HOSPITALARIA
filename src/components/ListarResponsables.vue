@@ -4,9 +4,12 @@
       <div class="card-header">
         <h2>Listado de Responsables</h2>
       </div>
-      <div class="card-body">
-        <table class="table">
-          <thead>
+      <div class="card-body row tbl-fixed" style="overflow: auto">
+        <table
+          border="1"
+          class="table table-hover table-ligth table-bordered table-stripe"
+        >
+          <thead class="table-secondary">
             <tr>
               <th>ID</th>
               <th>Nombre</th>
@@ -42,6 +45,7 @@
 
 <script>
 export default {
+  name: "ListarResponsables",
   data() {
     return {
       responsables: [],

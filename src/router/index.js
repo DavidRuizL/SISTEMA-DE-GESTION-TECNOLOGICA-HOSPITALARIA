@@ -1,8 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 
-import ListarEquipos from "../components/ListarEquipos.vue";
-import ListarResponsables from "../components/ListarResponsables.vue";
 import CrearEquipo from "../components/CrearEquipo.vue";
 import CrearResponsable from "../components/CrearResponsable.vue";
 
@@ -13,14 +11,29 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/listarequipos",
-    name: "ListarEquipos",
-    component: ListarEquipos,
+    path: "/listarequiposbio",
+    name: "ListarEquiposBio",
+    component: () => import("../components/ListarEquiposBio.vue"),
+  },
+  {
+    path: "/listarequiposinfra",
+    name: "ListarEquiposInfra",
+    component: () => import("../components/ListarEquiposInfra.vue"),
+  },
+  {
+    path: "/listarequipossis",
+    name: "ListarEquiposSis",
+    component: () => import("../components/ListarEquiposSis.vue"),
+  },
+  {
+    path: "/listarequiposna",
+    name: "ListarEquiposNa",
+    component: () => import("../components/ListarEquiposNa.vue"),
   },
   {
     path: "/listarresponsables",
     name: "ListarResponsables",
-    component: ListarResponsables,
+    component: () => import("../components/ListarResponsables.vue"),
   },
   {
     path: "/crearequipo",

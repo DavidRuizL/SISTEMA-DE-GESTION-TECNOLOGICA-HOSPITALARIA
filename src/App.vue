@@ -1,14 +1,25 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/listarequipos">Listar Equipo</router-link> |
-    <router-link to="/listarresponsables">Listar Responsable</router-link> |
-    <router-link to="/crearequipo">Crear Equipo</router-link> |
-    <router-link to="/crearesponsable">Crear Responsable</router-link> |
-  </nav>
+  <NavComp />
   <router-view />
+  <!-- /container -->
+  <footer class="footer">
+    <br />
+    <br />
+    <br />
+    <p>&copy; Ingenieria de software - 2022</p>
+  </footer>
 </template>
+
+<script>
+import NavComp from "@/components/NavComp.vue";
+
+export default {
+  name: "App",
+  components: {
+    NavComp,
+  },
+};
+</script>
 
 <style>
 #app {
