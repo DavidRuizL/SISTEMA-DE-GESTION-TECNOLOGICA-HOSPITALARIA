@@ -33,7 +33,7 @@
                     </div>
                     <div class="btn-group" role="group" aria-label="">
                         <button type="submit" class="btn btn-success">Agregar</button>
-                        <button type="button" class="btn btn-warning">Cancelar</button>
+                        <router-link :to="{name:'ListarEquipos'}" class="btn btn-warning">Cancelar</router-link>
                     </div>
                 </form>     
             </div>
@@ -53,7 +53,7 @@ export default {
           var responseClone;
           console.log(this.responsable);
           var datosEnviar={documento:this.responsable.documento , nombre:this.responsable.nombre, apellido:this.responsable.apellido , correo:this.responsable.correo}
-          fetch ('http://localhost/practica2/?insertar_resp=1', {
+          fetch ('http://localhost/Practica_vue/?insertar_resp=1', {
             method:"POST",
             body:JSON.stringify(datosEnviar)
           })
@@ -63,6 +63,7 @@ export default {
           })
           .then((datosRespuesta) => {
             console.log(datosRespuesta)
+            window.location.href='listarequipos'
           }, function(rejectionReason){
             console.log('error parsing JSON from response.', rejectionReason, responseClone);
             responseClone.text()

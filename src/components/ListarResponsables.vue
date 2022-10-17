@@ -14,7 +14,6 @@
               <th>ID</th>
               <th>Nombre</th>
               <th>Documento</th>
-              <th>Acciones</th>
             </tr>
           </thead>
           <tbody>
@@ -23,18 +22,6 @@
               <td>{{ responsable.id }}</td>
               <td>{{ responsable.nombre }}</td>
               <td>{{ responsable.documento }}</td>
-              <td>
-                <div class="btn-group" role="group" aria-label="">
-                  <button type="button" class="btn btn-info">Editar</button>
-                  <button
-                    type="button"
-                    v-on:click="borrarResponsable(responsable.id)"
-                    class="btn btn-danger"
-                  >
-                    Borrar
-                  </button>
-                </div>
-              </td>
             </tr>
           </tbody>
         </table>

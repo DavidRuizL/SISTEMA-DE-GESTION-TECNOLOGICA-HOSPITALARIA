@@ -28,25 +28,21 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li>
-                <a class="dropdown-item" href="listarequiposbio"
-                  >Equipos Biomedicos
-                </a>
+                <router-link :to="{name:'ListarEquiposBio'}" class="dropdown-item"> Equipos biomedicos</router-link>
+ 
               </li>
               <li>
-                <a class="dropdown-item" href="listarequipossis"
-                  >Equipos de Sistemas</a
-                >
+                <router-link :to="{name:'ListarEquiposSis'}" class="dropdown-item"> Equipos de Sistemas</router-link>
               </li>
               <li>
-                <a class="dropdown-item" href="listarequiposinfra"
-                  >Infraestructura</a
-                >
+                <router-link :to="{name:'ListarEquiposInfra'}" class="dropdown-item"> Equipos de Infraestructura</router-link>
+              </li>
+
+              <li>
+                <router-link :to="{name:'ListarEquiposNa'}" class="dropdown-item"> No asignados</router-link>
               </li>
               <li>
-                <a class="dropdown-item" href="listarequiposna">No Asigandos</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="listarequipos">Ver Todo</a>
+                <router-link :to="{name:'ListarEquipos'}" class="dropdown-item"> Ver todos</router-link>
               </li>
               <li><hr class="dropdown-divider" /></li>
               <li class="nav-item">
@@ -67,13 +63,11 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li class="nav-item">
-                <a class="nav-link" href="listarresponsables">Listado</a>
+                <router-link :to="{name:'ListarResponsables'}" class="dropdown-item"> Listar responsables</router-link>
               </li>
               <li><hr class="dropdown-divider" /></li>
               <li class="nav-item">
-                <a class="nav-link" href="crearesponsable"
-                  >Crear Responsables</a
-                >
+                <router-link :to="{name:'CrearResponsable'}" class="dropdown-item"> Crear responsable</router-link>
               </li>
             </ul>
           </li>
