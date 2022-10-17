@@ -24,7 +24,7 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Lista de Activos
+              Activos
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li>
@@ -45,23 +45,37 @@
               <li>
                 <a class="dropdown-item" href="listarequiposna">No Asigandos</a>
               </li>
+              <li>
+                <a class="dropdown-item" href="listarequipos">Ver Todo</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li class="nav-item">
+                <a class="nav-link" href="crearequipo">Crear equipo</a>
+              </li>
             </ul>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="listarresponsables"
-              >Lista de Responsables</a
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="crearequipo"
-              >Crear equipo</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="crearesponsable"
-              >Crear Responsables</a
-            >
+              Responsables
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="nav-item">
+                <a class="nav-link" href="listarresponsables">Listado</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li class="nav-item">
+                <a class="nav-link" href="crearesponsable"
+                  >Crear Responsables</a
+                >
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
