@@ -10,18 +10,18 @@
           class="table table-hover table-ligth table-bordered table-stripe"
         >
           <thead class="table-secondary">
-            <tr>
-              <th>ID</th>
+            <tr>              
               <th>Nombre</th>
               <th>Documento</th>
+              <th>Email</th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="responsable in responsables" :key="responsable.id">
-              <!-- <td scope="row"></td> -->
-              <td>{{ responsable.id }}</td>
+              <!-- <td scope="row"></td> -->              
               <td>{{ responsable.nombre }}</td>
               <td>{{ responsable.documento }}</td>
+              <td>{{ responsable.correo}}</td>
             </tr>
           </tbody>
         </table>

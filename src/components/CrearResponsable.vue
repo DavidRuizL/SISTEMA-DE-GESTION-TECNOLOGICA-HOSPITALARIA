@@ -9,31 +9,31 @@
                     <form class="form-inline">
                         <div class="form-group">
                             <label for="documento">Documento:</label>
-                            <input type="text" name="documento" v-model="responsable.documento" id="documento" class="form-control" placeholder="" aria-describedby="helpId">
+                            <input type="text" name="documento" v-model="responsable.documento" id="documento" class="form-control" placeholder="" aria-describedby="helpId" required>
                             <small id="helpId" class="text-muted">Ingrese Documento Responsable</small>
                         </div>
                     </form>
                     <div class="form-group">
                       <label for="nombre">Nombre:</label>
                       <input type="text"
-                        class="form-control" name="nombre" v-model="responsable.nombre" id="nombre" aria-describedby="helpId" placeholder="">
+                        class="form-control" name="nombre" v-model="responsable.nombre" id="nombre" aria-describedby="helpId" placeholder="" required>
                       <small id="helpId" class="form-text text-muted">Ingresar nombre del responsable</small>
                     </div>
                     <div class="form-group">
                       <label for="apellido">Apellido:</label>
                       <input type="text"
-                        class="form-control" name="apellido" v-model="responsable.apellido" id="apellido" aria-describedby="helpId" placeholder="">
+                        class="form-control" name="apellido" v-model="responsable.apellido" id="apellido" aria-describedby="helpId" placeholder="" required>
                       <small id="helpId" class="form-text text-muted">Ingrese apellido del responsable</small>
                     </div>
                     <div class="form-group">
                       <label for="correo">Correo:</label>
-                      <input type="text"
-                        class="form-control" name="correo" v-model="responsable.correo" id="serial" aria-describedby="helpId" placeholder="">
+                      <input  type="email"
+                        class="form-control" name="correo" v-model="responsable.correo" id="serial" aria-describedby="helpId" placeholder="" required>
                       <small id="helpId" class="form-text text-muted">Ingrese correo del responsable</small>
                     </div>
                     <div class="btn-group" role="group" aria-label="">
-                        <button type="submit" class="btn btn-success">Agregar</button>
-                        <router-link :to="{name:'ListarEquipos'}" class="btn btn-warning">Cancelar</router-link>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                        <router-link :to="{name:'ListarResponsables'}" class="btn btn-warning">Cancelar</router-link>
                     </div>
                 </form>     
             </div>
@@ -63,7 +63,7 @@ export default {
           })
           .then((datosRespuesta) => {
             console.log(datosRespuesta)
-            window.location.href='listarequipos'
+            window.location.href='listarresponsables'
           }, function(rejectionReason){
             console.log('error parsing JSON from response.', rejectionReason, responseClone);
             responseClone.text()

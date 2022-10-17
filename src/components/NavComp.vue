@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">LOGO</a>
+      <a class="navbar-brand" href="/">Buena Salud</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -46,7 +46,7 @@
               </li>
               <li><hr class="dropdown-divider" /></li>
               <li class="nav-item">
-                <a class="nav-link" href="crearequipo">Crear equipo</a>
+                <router-link :to="{name:'CrearEquipo'}" class="dropdown-item"> Crear equipo</router-link>
               </li>
             </ul>
           </li>

@@ -55,7 +55,7 @@
                       </select>
                     </div>
                    <div class="btn-group" role="group" aria-label="">                         
-                        <button type="submit" class="btn btn-success">Actualizar</button>
+                        <button type="submit" class="btn btn-primary">Actualizar</button>
                        <router-link :to="{name:'ListarEquipos'}" class="btn btn-warning" href="">Cancelar</router-link>
                    </div>
                </form>

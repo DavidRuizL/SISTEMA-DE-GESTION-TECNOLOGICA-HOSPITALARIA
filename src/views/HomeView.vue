@@ -32,7 +32,7 @@
             en de salud...
           </p>
           <p>
-            <a class="btn btn-secondary" href="#" role="button"
+            <a class="btn btn-primary" href="#" role="button"
               >Ver mas &raquo;</a
             >
           </p>
@@ -44,7 +44,7 @@
             innovación en salud a nivel internacional, ademas...
           </p>
           <p>
-            <a class="btn btn-secondary" href="#" role="button"
+            <a class="btn btn-primary" href="#" role="button"
               >Ver mas &raquo;</a
             >
           </p>
@@ -56,7 +56,7 @@
             sus cercanos que...
           </p>
           <p>
-            <a class="btn btn-secondary" href="#" role="button"
+            <a class="btn btn-primary" href="#" role="button"
               >Ver mas &raquo;</a
             >
           </p>

@@ -55,7 +55,7 @@
                      </select>
                    </div>
                    <div class="btn-group" role="group" aria-label="">
-                       <button type="submit" class="btn btn-success">Agregar</button>
+                       <button type="submit" class="btn btn-primary">Agregar</button>
                        <router-link :to="{name:'ListarEquipos'}" class="btn btn-warning">Cancelar</router-link>
                    </div>
                </form>
