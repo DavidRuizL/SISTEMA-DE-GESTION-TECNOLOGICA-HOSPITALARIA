@@ -27,7 +27,7 @@
                 <td>{{ equipo.modelo }}</td>
                 <td>
                   <div class="btn-group" role="group" aria-label="">
-                    <button type="button" class="btn btn-info">Editar</button>
+                    <router-link :to="{name:'EditarEquipos',params:{id:equipo.id}}" class="btn btn-info">Editar</router-link>
                     <button
                       type="button"
                       v-on:click="borrarEquipo(equipo.id)"

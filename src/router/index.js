@@ -41,6 +41,11 @@ const routes = [
     component: () => import("../components/ListarEquipos.vue"),
   },
   {
+    path: "/editarequipos/:id",
+    name: "EditarEquipos",
+    component: () => import("../components/EditarEquipos.vue"),
+  },
+  {
     path: "/crearequipo",
     name: "CrearEquipo",
     component: CrearEquipo,

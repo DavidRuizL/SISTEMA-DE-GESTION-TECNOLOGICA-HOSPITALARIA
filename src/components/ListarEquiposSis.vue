@@ -27,7 +27,7 @@
                 <td>{{ equipo.modelo }}</td>
                 <td>
                   <div class="btn-group" role="group" aria-label="">
-                    <button type="button" class="btn btn-info">Editar</button>
+                    <router-link :to="{name:'EditarEquipos',params:{id:equipo.id}}" class="btn btn-info">Editar</router-link>
                     <button
                       type="button"
                       v-on:click="borrarEquipo(equipo.id)"
@@ -59,7 +59,7 @@ export default {
   },
   methods: {
     lilstarEquipos() {
-      fetch("http://localhost/practica_vue/")
+      fetch("http://localhost/Practica_vue/")
         .then((respuesta) => respuesta.json())
         .then((datosRespuesta) => {
           console.log(datosRespuesta);
@@ -72,7 +72,7 @@ export default {
     },
     borrarEquipo(id) {
       console.log(id);
-      fetch("http://localhost/practica_vue/?borrar=" + id)
+      fetch("http://localhost/Practica_vue/?borrar=" + id)
         .then((respuesta) => respuesta.json())
         .then((datosRespuesta) => {
           console.log(datosRespuesta);
